@@ -1,0 +1,308 @@
+// Language syntax highlighting
+
+.comment {
+  color: @mono-3;
+  font-style: italic;
+
+  .markup.link {
+    color: @mono-3;
+  }
+}
+
+.entity {
+
+  &.name.type {
+    color: @color-amber;
+  }
+
+  &.other.inherited-class {
+    color: @color-light-green;
+  }
+}
+
+.keyword {
+  color: @color-deep-purple;
+
+  &.control {
+    color: @color-deep-purple;
+  }
+
+  &.operator {
+    color: @mono-1;
+  }
+
+  &.other.special-method {
+    color: @color-blue;
+  }
+
+  &.other.unit {
+    color: @color-orange;
+  }
+}
+
+.storage {
+  color: @color-deep-purple;
+
+  &.type {
+    &.annotation,
+    &.primitive {
+      color: @color-deep-purple;
+    }
+  }
+
+  &.modifier {
+    &.package,
+    &.import {
+      color: @mono-1;
+    }
+  }
+}
+
+.constant {
+  color: @color-orange;
+
+  &.variable {
+    color: @color-orange;
+  }
+
+  &.character.escape {
+    color: @color-cyan;
+  }
+
+  &.numeric {
+    color: @color-orange;
+  }
+
+  &.other.color {
+    color: @color-cyan;
+  }
+
+  &.other.symbol {
+    color: @color-cyan;
+  }
+}
+
+.variable {
+  color: @color-red;
+
+  &.interpolation {
+    color: @color-red-2;
+  }
+
+  &.parameter {
+    color: @mono-1;
+  }
+}
+
+.string {
+  color: @color-light-green;
+
+
+  &.regexp {
+    color: @color-cyan;
+
+    .source.ruby.embedded {
+      color: @color-amber;
+    }
+  }
+
+  &.other.link {
+    color: @color-red;
+  }
+}
+
+.punctuation {
+  &.definition {
+    &.comment {
+      color: @mono-3;
+    }
+
+    &.method-parameters,
+    &.function-parameters,
+    &.parameters,
+    &.separator,
+    &.seperator,
+    &.array {
+      color: @mono-1;
+    }
+
+    &.heading,
+    &.identity {
+      color: @color-blue;
+    }
+
+    &.bold {
+      color: @color-amber;
+      font-weight: bold;
+    }
+
+    &.italic {
+      color: @color-deep-purple;
+      font-style: italic;
+    }
+  }
+
+  &.section {
+    &.embedded {
+      color: @color-red-2;
+    }
+
+    &.method,
+    &.class,
+    &.inner-class {
+      color: @mono-1;
+    }
+  }
+}
+
+.support {
+  &.class {
+    color: @color-amber;
+  }
+
+  &.type {
+    color: @color-cyan;
+  }
+
+  &.function  {
+    color: @color-cyan;
+
+    &.any-method {
+      color: @color-blue;
+    }
+  }
+}
+
+.entity {
+  &.name.function {
+    color: @color-blue;
+  }
+
+  &.name.class,
+  &.name.type.class {
+    color: @color-amber;
+  }
+
+  &.name.section {
+    color: @color-blue;
+  }
+
+  &.name.tag {
+    color: @color-red;
+  }
+
+  &.other.attribute-name {
+    color: @color-orange;
+
+    &.id {
+      color: @color-blue;
+    }
+  }
+}
+
+.meta {
+  &.class {
+    color: @color-amber;
+
+    &.body {
+      color: @mono-1;
+    }
+  }
+
+  &.method-call,
+  &.method {
+    color: @mono-1;
+  }
+
+  &.definition {
+    &.variable {
+      color: @color-red;
+    }
+  }
+
+  &.link {
+    color: @color-orange;
+  }
+
+  &.require {
+    color: @color-blue;
+  }
+
+  &.selector {
+    color: @color-deep-purple;
+  }
+
+  &.separator {
+    background-color: #373b41;
+    color: @mono-1;
+  }
+
+  &.tag {
+    color: @mono-1;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.none {
+  color: @mono-1;
+}
+
+.invalid {
+  &.deprecated {
+    color: @syntax-deprecated-fg !important;
+    background-color: @syntax-deprecated-bg !important;
+  }
+  &.illegal {
+    color: @syntax-illegal-fg !important;
+    background-color: @syntax-illegal-bg !important;
+  }
+}
+
+// Languages -------------------------------------------------
+
+.markup {
+  &.bold {
+    color: @color-orange;
+    font-weight: bold;
+  }
+
+  &.changed {
+    color: @color-deep-purple;
+  }
+
+  &.deleted {
+    color: @color-red;
+  }
+
+  &.italic {
+    color: @color-deep-purple;
+    font-style: italic;
+  }
+
+  &.heading {
+    color: @color-red;
+
+    .punctuation.definition.heading {
+      color: @color-blue;
+    }
+  }
+
+  &.link {
+    color: @color-deep-purple;
+  }
+
+  &.inserted {
+    color: @color-light-green;
+  }
+
+  &.quote {
+    color: @color-orange;
+  }
+
+  &.raw {
+    color: @color-light-green;
+  }
+}

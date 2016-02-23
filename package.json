@@ -1,0 +1,17 @@
+{
+  "name": "material-dark-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A dark Material Design syntax theme",
+  "keywords": [
+    "material",
+    "material design",
+    "dark",
+    "syntax"
+  ],
+  "repository": "https://github.com/D1SC0tech/material-dark-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": "^1.0.0"
+  }
+}
